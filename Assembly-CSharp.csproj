@@ -51,8 +51,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MugHeadStudios\MoveObjectWASD.cs" />
-     <Compile Include="Assets\MugHeadStudios\Parallax\Parallax.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\2D\CharacterController\CharacterController2D.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\2D\CharacterController\CharacterInput2D.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\2D\Point.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\BaseScene\BaseScene.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\BaseScene\Example\BaseScene_1.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\BaseScene\Example\RotateCube.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\Debug\MoveObjectWASD.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\Extensions.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\Global\Global.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\Global\GlobalObject.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\Global\RunningAction.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\MessageBox\Examples\MessageBoxExample.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\MessageBox\Examples\MessageBoxExample2.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\MessageBox\MessageBox.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\MessageBox\MessageBoxController.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\Mono\MugHeadMonoBehaviour.cs" />
+     <Compile Include="Assets\Assets\MugHeadStudios\Parallax\Parallax.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

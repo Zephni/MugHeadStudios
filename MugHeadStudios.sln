@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugHeadStudios", "Assembly-CSharp.csproj", "{6662A9EE-1859-E376-AF40-8D1DBD25F67E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugHeadStudios", "Assembly-CSharp-firstpass.csproj", "{7AEA2C54-8047-B6F3-6746-66C2837B8694}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6662A9EE-1859-E376-AF40-8D1DBD25F67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6662A9EE-1859-E376-AF40-8D1DBD25F67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6662A9EE-1859-E376-AF40-8D1DBD25F67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6662A9EE-1859-E376-AF40-8D1DBD25F67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AEA2C54-8047-B6F3-6746-66C2837B8694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AEA2C54-8047-B6F3-6746-66C2837B8694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AEA2C54-8047-B6F3-6746-66C2837B8694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AEA2C54-8047-B6F3-6746-66C2837B8694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
