@@ -61,6 +61,7 @@
      <Compile Include="Assets\MugHeadStudios\BaseScene\Example\RotateCube.cs" />
      <Compile Include="Assets\MugHeadStudios\Debug\MoveObjectWASD.cs" />
      <Compile Include="Assets\MugHeadStudios\Extensions.cs" />
+     <Compile Include="Assets\MugHeadStudios\Faders\MHSFader.cs" />
      <Compile Include="Assets\MugHeadStudios\Global\Global.cs" />
      <Compile Include="Assets\MugHeadStudios\Global\GlobalObject.cs" />
      <Compile Include="Assets\MugHeadStudios\Global\RunningAction.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\MugHeadStudios\MessageBox\MessageBoxController.cs" />
      <Compile Include="Assets\MugHeadStudios\Mono\MugHeadMonoBehaviour.cs" />
      <Compile Include="Assets\MugHeadStudios\Parallax\Parallax.cs" />
+     <Compile Include="Assets\MyGame\Scenes\MainMenu\Scene_MainMenu.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

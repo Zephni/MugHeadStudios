@@ -21,7 +21,7 @@ namespace MugHeadStudios
 		void Awake()
 		{
 			_instance = this;
-			if(defaultScene != null && defaultScene != "")
+			if(defaultScene != null && defaultScene != "" && GameObject.Find("BaseLevelLoader") == null)
 				LoadSceneAdditive(defaultScene);
 		}
 

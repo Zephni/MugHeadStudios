@@ -23,7 +23,7 @@ namespace MugHeadStudios
 
         private Material material;
 
-        public void Update()
+        public void LateUpdate()
         {
             // Shouldn't do all this every frame, reason is to apply when screen size changes
             texture2D.wrapModeU = wrapModeX;
@@ -50,9 +50,9 @@ namespace MugHeadStudios
             transform.localScale = new Vector2(width, height);
 
             // Position and offset
-            Vector2 newPos = Camera.main.transform.position;
-            transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
-            GetComponent<MeshRenderer>().sharedMaterial.mainTextureOffset = new Vector2(offset.x + (newPos.x * coefficient.x), offset.y + (newPos.y * coefficient.y));
+            //Vector2 newPos = Camera.main.transform.position;
+            //transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
+            GetComponent<MeshRenderer>().sharedMaterial.mainTextureOffset = new Vector2(offset.x + (Camera.main.transform.position.x * coefficient.x), offset.y + (Camera.main.transform.position.y * coefficient.y));
         }
     }
 }

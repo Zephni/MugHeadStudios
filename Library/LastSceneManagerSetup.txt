@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MugHeadStudios/MessageBox/Examples/MessageBoxExample2.unity
+- path: Assets/MyGame/Scenes/Levels/Level_TheTree.unity
   isLoaded: 1
   isActive: 1

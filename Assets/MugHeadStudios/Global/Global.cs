@@ -102,7 +102,10 @@ namespace MugHeadStudios
 
         public static void RunUntil(Func<bool> until, Action action, Action callback = null)
         {
-            RunningActions.Add(new RunningAction(until, action, callback));
+            RunningActions.Add(new RunningAction(
+                until, 
+                action, 
+                callback));
         }
 
         public static void WaitRun(float time, Action callback)
@@ -129,6 +132,13 @@ namespace MugHeadStudios
         {
             float p = (progress == null) ? Time.timeSinceLevelLoad : (float)progress;
             return distance * Mathf.Sin(p * speed);
+        }
+
+        public static T ModifyNonVariable<T>(T obj, Func<T, T> act)
+        {
+            T newObj = obj;
+            newObj = act(newObj);
+            return newObj;
         }
     }
 
