@@ -16,6 +16,7 @@ namespace MugHeadStudios
             instance = this;
         }
 
+        public string fireButton = "Fire1";
         public List<GameObject> messageBoxPrefabs;
 
         public void Build(MessageBoxParams parameters, Action<MessageBox> callback = null)
@@ -24,8 +25,12 @@ namespace MugHeadStudios
             go.GetComponent<RectTransform>().localScale = new Vector3(0, 0, 1);
             go.transform.SetParent(this.transform);
             go.transform.localPosition = Vector3.zero;
+            go.GetComponent<MessageBox>().fireButton = fireButton;
             go.GetComponent<MessageBox>().text = parameters.Text;
             go.GetComponent<MessageBox>().writeTextSpeed = parameters.Speed;
+            go.GetComponent<MessageBox>().writeText = (parameters.Speed > 0);
+            go.GetComponent<MessageBox>().canSpeedUpWrite = (parameters.CanSpeedUpWriteSpeed);
+            go.GetComponent<MessageBox>().speedUpMultiplier = parameters.SpeedUpWriteSpeed;
 
             Vector2 pos = Camera.main.WorldToViewportPoint((parameters.Position != null) ? (Vector3)parameters.Position : Camera.main.transform.position);
             go.GetComponent<RectTransform>().anchorMin = pos;
@@ -51,7 +56,7 @@ namespace MugHeadStudios
             messageBoxList = new List<MessageBoxParams>(parameters);
 
             Build(messageBoxList[0], mb => {
-                Global.RunUntil(() => { return Input.GetButtonDown("Fire1"); }, () => { }, () => {
+                Global.RunUntil(() => { return Input.GetButtonDown(fireButton); }, () => { }, () => {
                     Global.RunFor(parameters[0].FadeTime, i => {
                         mb.GetComponent<RectTransform>().localScale = new Vector3(1 - i, 1 - i, 1);
                         mb.GetComponent<CanvasGroup>().alpha = 1-i;
@@ -88,9 +93,11 @@ namespace MugHeadStudios
     public class MessageBoxParams
     {
         public string Text = "No text";
-        public float Speed = 50;
+        public float Speed = 30;
         public float FadeTime = 0.15f;
         public Vector3? Position = null;
         public int PrefabIndex = 0;
+        public bool CanSpeedUpWriteSpeed = true;
+        public float SpeedUpWriteSpeed = 2;
     }
 }

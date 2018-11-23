@@ -21,7 +21,7 @@ namespace MugHeadStudios_Example
 				).Next(() => {
 					Global.WaitRun(0.5f, () => {
 						MessageBoxController.BuildMessages(
-							new MessageBoxParams { Text = "MessageBoxExample\n" + "Each message can have it's own set of parameters! :)", Position = new Vector2(0, 2) },
+							new MessageBoxParams { Text = "MessageBoxExample\n" + "Each message can have it's own set of parameters! :)", Position = new Vector2(0, 2), Speed = 0 },
 							new MessageBoxParams { Text = "This one is much slower for example...", FadeTime = 1.6f, Speed = 25 }
 						);
 					});
